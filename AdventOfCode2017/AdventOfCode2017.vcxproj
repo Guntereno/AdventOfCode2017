@@ -20,10 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\AdventOfCode2017.cpp" />
-    <ClCompile Include="Source\Puzzles\Day1Puzzle1.cpp" />
+    <ClCompile Include="Source\Puzzles\Day1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Include\Puzzles\Day1Puzzle1.h" />
+    <ClInclude Include="Include\Puzzles\Day1.h" />
     <ClInclude Include="Include\Puzzles\Puzzle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -24,15 +24,15 @@
     <ClCompile Include="Source\AdventOfCode2017.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Puzzles\Day1Puzzle1.cpp">
+    <ClCompile Include="Source\Puzzles\Day1.cpp">
       <Filter>Source\Puzzles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Include\Puzzles\Day1Puzzle1.h">
+    <ClInclude Include="Include\Puzzles\Puzzle.h">
       <Filter>Include\Puzzles</Filter>
     </ClInclude>
-    <ClInclude Include="Include\Puzzles\Puzzle.h">
+    <ClInclude Include="Include\Puzzles\Day1.h">
       <Filter>Include\Puzzles</Filter>
     </ClInclude>
   </ItemGroup>

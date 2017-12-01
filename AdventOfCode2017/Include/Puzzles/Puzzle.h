@@ -1,7 +1,10 @@
 #pragma once
 
+#include <string>
+
 class Puzzle
 {
 public:
-    virtual const char* Solve() = 0;
+    virtual std::string Solve() = 0;
 };
+
