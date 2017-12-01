@@ -34,8 +34,7 @@ static std::string SolveForOffset(int offset, size_t len)
 {
     int sum = 0;
 
-    
-    for (int i = 0; i < len; ++i)
+    for (unsigned int i = 0; i < len; ++i)
     {
         char currentChar = kInput[i];
         int nextIndex = GetLoopedOffset(i, offset, len);
@@ -43,7 +42,14 @@ static std::string SolveForOffset(int offset, size_t len)
 
         if (currentChar == nextChar)
         {
-            char number = currentChar - '0';
+            if ((currentChar < '0') || (currentChar > '9'))
+            {
+                throw "Invalid character found in stream!";
+            }
+
+            // ASCII value of numbers are in numerical order, so this hack
+            // converts a char to the numeric value
+            int number = currentChar - '0';
             sum += number;
         }
     }
@@ -53,7 +59,7 @@ static std::string SolveForOffset(int offset, size_t len)
 
 static int GetLoopedOffset(int current, int offset, size_t len)
 {
-    int index = current + offset;
+    unsigned int index = current + offset;
     while (index >= len)
     {
         index -= len;
