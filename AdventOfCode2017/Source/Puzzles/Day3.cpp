@@ -88,7 +88,7 @@ int WidthOfRing(int ring)
 	return (ring * 2) + 1;
 }
 
-int CapacityAtfRing(int ring)
+int CapacityAtRing(int ring)
 {
 	int width = WidthOfRing(ring);
 	return width * width;
@@ -97,7 +97,7 @@ int CapacityAtfRing(int ring)
 int GetRingNeededToContain(size_t size)
 {
 	int ring = 0;
-	while (CapacityAtfRing(ring) < size)
+	while (CapacityAtRing(ring) < size)
 	{
 		++ring;
 	}
@@ -114,8 +114,7 @@ int GetMapIndexForCoord(const Point& coord, int numRings)
 
 bool PointIsInRange(const Point& coord, int numRings)
 {
-	return
-		coord.X > -numRings
+	return	coord.X > -numRings
 		&&	coord.Y > -numRings
 		&&	coord.X < numRings
 		&&	coord.Y < numRings;
