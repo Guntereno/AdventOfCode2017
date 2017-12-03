@@ -19,6 +19,12 @@
     <Filter Include="Source\Puzzles">
       <UniqueIdentifier>{d336594e-d704-4027-b235-5dc8cd96441b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Include\Common">
+      <UniqueIdentifier>{24964d54-96a1-4516-ac33-a6c98d8b5fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common">
+      <UniqueIdentifier>{df3ad471-a2e8-4deb-886a-45666225c71f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\AdventOfCode2017.cpp">
@@ -26,6 +32,15 @@
     </ClCompile>
     <ClCompile Include="Source\Puzzles\Day1.cpp">
       <Filter>Source\Puzzles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Puzzles\Day2.cpp">
+      <Filter>Source\Puzzles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\TsvParser.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Common.cpp">
+      <Filter>Source\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -35,5 +50,19 @@
     <ClInclude Include="Include\Puzzles\Day1.h">
       <Filter>Include\Puzzles</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Puzzles\Day2.h">
+      <Filter>Include\Puzzles</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\TsvParser.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\Common.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\Day2Data.tsv">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
