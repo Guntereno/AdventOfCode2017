@@ -42,6 +42,9 @@
     <ClCompile Include="Source\Common\Common.cpp">
       <Filter>Source\Common</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Puzzles\Day3.cpp">
+      <Filter>Source\Puzzles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Puzzles\Puzzle.h">
@@ -58,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="Include\Common\Common.h">
       <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Puzzles\Day3.h">
+      <Filter>Include\Puzzles</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
