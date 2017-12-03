@@ -8,4 +8,3 @@ public:
     Day3();
     std::string Solve();
 };
-

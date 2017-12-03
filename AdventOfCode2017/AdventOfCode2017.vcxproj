@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="Source\AdventOfCode2017.cpp" />
     <ClCompile Include="Source\Common\Common.cpp" />
+    <ClCompile Include="Source\Common\Point.cpp" />
     <ClCompile Include="Source\Common\TsvParser.cpp" />
     <ClCompile Include="Source\Puzzles\Day1.cpp" />
     <ClCompile Include="Source\Puzzles\Day2.cpp" />
@@ -28,6 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Common\Common.h" />
+    <ClInclude Include="Include\Common\Point.h" />
     <ClInclude Include="Include\Common\TsvParser.h" />
     <ClInclude Include="Include\Puzzles\Day1.h" />
     <ClInclude Include="Include\Puzzles\Day2.h" />
