@@ -3,6 +3,7 @@
 #include "Puzzles\Day3.h"
 #include "Puzzles\Day4.h"
 #include "Puzzles\Day5.h"
+#include "Puzzles\Day6.h"
 
 #include <iostream>
 
@@ -22,11 +23,12 @@ void Solve(int number)
 
 int main()
 {
-    SOLVE(1)
-	SOLVE(2)
-	SOLVE(3)
-	SOLVE(4)
-	SOLVE(5)
+	//SOLVE(1)
+	//SOLVE(2)
+	//SOLVE(3)
+	//SOLVE(4)
+	//SOLVE(5)
+	SOLVE(6)
 	system("pause");
     return 0;
 }
