@@ -2,12 +2,9 @@
 
 #include "Puzzle.h"
 
-
-
-class Day1 : public Puzzle
+class Day8 : public Puzzle
 {
 public:
-    Day1();
+    Day8();
     std::string Solve();
 };
-

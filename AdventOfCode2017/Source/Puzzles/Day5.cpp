@@ -6,45 +6,47 @@
 
 using namespace std;
 
-struct Cpu
+namespace Day5Utils
 {
-	void Run(vector<int> program)
+	struct Cpu
 	{
-		Pc = 0;
-		Cycles = 0;
-		Program = program;
-
-		bool shouldContinue = false;
-		do
+		void Run(vector<int> program)
 		{
-			shouldContinue = Execute();
-		}
-		while (shouldContinue);
-	}
+			Pc = 0;
+			Cycles = 0;
+			Program = program;
 
-	bool Execute()
-	{
-		int jumps = Program[Pc];
-
-		if (StrangeJumps && (jumps >= 3))
-		{
-			Program[Pc] -= 1;
-		}
-		else
-		{
-			Program[Pc] += 1;
+			bool shouldContinue = false;
+			do
+			{
+				shouldContinue = Execute();
+			} while (shouldContinue);
 		}
 
-		Pc += jumps;
-		++Cycles;
-		return ((Pc >= 0) && (Pc < Program.size()));
-	}
+		bool Execute()
+		{
+			int jumps = Program[Pc];
 
-	int Pc = 0;
-	int Cycles = 0;
-	bool StrangeJumps = false;
-	vector<int> Program;
-};
+			if (StrangeJumps && (jumps >= 3))
+			{
+				Program[Pc] -= 1;
+			}
+			else
+			{
+				Program[Pc] += 1;
+			}
+
+			Pc += jumps;
+			++Cycles;
+			return ((Pc >= 0) && (Pc < Program.size()));
+		}
+
+		int Pc = 0;
+		int Cycles = 0;
+		bool StrangeJumps = false;
+		vector<int> Program;
+	};
+}
 
 Day5::Day5()
 {
@@ -74,7 +76,7 @@ vector<int> LoadProgram(string fileName)
 std::string Day5::Solve()
 {
 	vector<int> program = LoadProgram("Day5Input.txt");
-	Cpu cpu;
+	Day5Utils::Cpu cpu;
 	cpu.Run(program);
 	int solution1 = cpu.Cycles;
 
