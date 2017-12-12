@@ -26,6 +26,7 @@
     <ClCompile Include="Source\Puzzles\Day1.cpp" />
     <ClCompile Include="Source\Puzzles\Day2.cpp" />
     <ClCompile Include="Source\Puzzles\Day3.cpp" />
+    <ClCompile Include="Source\Puzzles\Day4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Common\Common.h" />
@@ -35,6 +36,7 @@
     <ClInclude Include="Include\Puzzles\Day1.h" />
     <ClInclude Include="Include\Puzzles\Day2.h" />
     <ClInclude Include="Include\Puzzles\Day3.h" />
+    <ClInclude Include="Include\Puzzles\Day4.h" />
     <ClInclude Include="Include\Puzzles\Puzzle.h" />
   </ItemGroup>
   <ItemGroup>

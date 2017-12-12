@@ -10,13 +10,13 @@
 
 namespace Common
 {
-	template <class TCell, class TCompare>
+	template <class TCell, class TParse>
 	class CsvParser
 	{
 	public:
-		CsvParser(const char* fileName, TCompare compare, char separator, char newLine):
+		CsvParser(const char* fileName, TParse parse, char separator, char newLine):
 			_pFileName(fileName),
-			_compare(compare),
+			_parse(parse),
 			_separator(separator),
 			_newLine(newLine)
 		{}
@@ -31,13 +31,13 @@ namespace Common
 			if (inputFile.is_open())
 			{
 				char c;
-				vector<int> currentRow;
+				vector<TCell> currentRow;
 				stringstream cellStream;
 				while (inputFile.get(c))
 				{
 					if(c == _separator)
 					{
-						int value = stoi(cellStream.str());
+						TCell value = _parse(cellStream.str());
 						currentRow.push_back(value);
 
 						cellStream.str("");
@@ -45,7 +45,7 @@ namespace Common
 					}
 					else if (c == _newLine)
 					{
-						int value = _compare(cellStream.str());
+						TCell value = _parse(cellStream.str());
 						currentRow.push_back(value);
 
 						data.push_back(currentRow);
@@ -56,7 +56,6 @@ namespace Common
 					else
 					{
 						cellStream << c;
-						break;
 					}
 				}
 
@@ -72,7 +71,7 @@ namespace Common
 
 	private:
 		const char* _pFileName;
-		TCompare _compare;
+		TParse _parse;
 		char _separator;
 		char _newLine;
 	};

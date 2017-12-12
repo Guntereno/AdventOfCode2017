@@ -1,6 +1,7 @@
 #include "Puzzles\Day1.h"
 #include "Puzzles\Day2.h"
 #include "Puzzles\Day3.h"
+#include "Puzzles\Day4.h"
 
 #include <iostream>
 
@@ -23,6 +24,7 @@ int main()
     SOLVE(1)
 	SOLVE(2)
 	SOLVE(3)
+	SOLVE(4)
 	system("pause");
     return 0;
 }

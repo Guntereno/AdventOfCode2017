@@ -48,6 +48,9 @@
     <ClCompile Include="Source\Common\Parsing.cpp">
       <Filter>Source\Common</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Puzzles\Day4.cpp">
+      <Filter>Source\Puzzles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Puzzles\Puzzle.h">
@@ -73,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="Include\Common\CsvParser.h">
       <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Puzzles\Day4.h">
+      <Filter>Include\Puzzles</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
