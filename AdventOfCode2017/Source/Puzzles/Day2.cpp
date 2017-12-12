@@ -4,8 +4,8 @@
 #include <sstream>
 
 #include "Common\Common.h"
-#include "Common\TsvParser.h"
-
+#include "Common\CsvParser.h"
+#include "Common\Parsing.h"
 
 using namespace std;
 
@@ -24,7 +24,8 @@ std::string Day2::Solve()
 	stringstream solutionStream;
 
 	const char* kInputFileName = "Day2Input.tsv";
-	Common::TsvParser tsv(kInputFileName);
+	Common::ParseInt parseInt;
+	Common::CsvParser<int, Common::ParseInt> tsv(kInputFileName, parseInt, '\t', '\n');
 	vector <vector<int>> sheet = tsv.Parse();
 
 	long checksum = CalculateChecksum(sheet);

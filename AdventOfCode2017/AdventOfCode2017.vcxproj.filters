@@ -36,9 +36,6 @@
     <ClCompile Include="Source\Puzzles\Day2.cpp">
       <Filter>Source\Puzzles</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Common\TsvParser.cpp">
-      <Filter>Source\Common</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Common\Common.cpp">
       <Filter>Source\Common</Filter>
     </ClCompile>
@@ -46,6 +43,9 @@
       <Filter>Source\Puzzles</Filter>
     </ClCompile>
     <ClCompile Include="Source\Common\Point.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Parsing.cpp">
       <Filter>Source\Common</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,9 +59,6 @@
     <ClInclude Include="Include\Puzzles\Day2.h">
       <Filter>Include\Puzzles</Filter>
     </ClInclude>
-    <ClInclude Include="Include\Common\TsvParser.h">
-      <Filter>Include\Common</Filter>
-    </ClInclude>
     <ClInclude Include="Include\Common\Common.h">
       <Filter>Include\Common</Filter>
     </ClInclude>
@@ -69,6 +66,12 @@
       <Filter>Include\Puzzles</Filter>
     </ClInclude>
     <ClInclude Include="Include\Common\Point.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\Parsing.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\CsvParser.h">
       <Filter>Include\Common</Filter>
     </ClInclude>
   </ItemGroup>
