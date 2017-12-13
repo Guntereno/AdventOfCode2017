@@ -31,6 +31,7 @@
     <ClCompile Include="Source\Puzzles\Day6.cpp" />
     <ClCompile Include="Source\Puzzles\Day7.cpp" />
     <ClCompile Include="Source\Puzzles\Day8.cpp" />
+    <ClCompile Include="Source\Puzzles\Day9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Common\Common.h" />
