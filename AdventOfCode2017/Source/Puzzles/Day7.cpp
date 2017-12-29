@@ -205,8 +205,8 @@ int GetDesiredWeightForFirstIncorrectProgram(map<string, Program>& map, Program*
 				{
 					// ... else the last one was incorrect
 					assert(currentChild.TotalWeight == nextProgram.TotalWeight);
-					pIncorrectProgram = &currentChild;
-					desiredTotalWeight = pLastProgram->TotalWeight;
+					pIncorrectProgram = pLastProgram;
+					desiredTotalWeight = currentChild.TotalWeight;
 				}
 
 				int diff = desiredTotalWeight - pIncorrectProgram->TotalWeight;
