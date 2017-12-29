@@ -23,16 +23,16 @@ namespace Common
 
 		std::vector <std::vector<TCell>> CsvParser::Parse()
 		{
-			vector <vector<TCell>> data;
+			std::vector <std::vector<TCell>> data;
 
-			ifstream inputFile;
-			inputFile.open(_pFileName, ifstream::in);
+			std::ifstream inputFile;
+			inputFile.open(_pFileName, std::ifstream::in);
 
 			if (inputFile.is_open())
 			{
 				char c;
-				vector<TCell> currentRow;
-				stringstream cellStream;
+				std::vector<TCell> currentRow;
+				std::stringstream cellStream;
 				while (inputFile.get(c))
 				{
 					if(c == _separator)

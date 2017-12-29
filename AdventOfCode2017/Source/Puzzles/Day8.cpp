@@ -260,6 +260,10 @@ Day8::Day8()
 
 }
 
+Day8::~Day8()
+{
+
+}
 
 std::string Day8::Solve()
 {

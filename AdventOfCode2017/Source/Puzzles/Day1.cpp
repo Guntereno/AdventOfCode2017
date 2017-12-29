@@ -18,6 +18,11 @@ Day1::Day1()
 
 }
 
+Day1::~Day1()
+{
+
+}
+
 string Day1::Solve()
 {
     size_t len = strlen(kInput);

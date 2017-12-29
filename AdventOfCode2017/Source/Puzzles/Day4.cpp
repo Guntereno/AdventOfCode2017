@@ -13,6 +13,11 @@ Day4::Day4()
 
 }
 
+Day4::~Day4()
+{
+
+}
+
 bool IsInvalid(const vector<string>& phrase)
 {
 	for (int a = 0; a < phrase.size(); ++a)

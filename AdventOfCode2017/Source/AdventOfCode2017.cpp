@@ -7,6 +7,7 @@
 #include "Puzzles\Day7.h"
 #include "Puzzles\Day8.h"
 #include "Puzzles\Day9.h"
+#include "Puzzles\Day10.h"
 
 #include <iostream>
 
@@ -34,7 +35,8 @@ int main()
 	//SOLVE(6)
 	//SOLVE(7)
 	//SOLVE(8)
-	SOLVE(9)
+	//SOLVE(9)
+	SOLVE(10)
 
 	system("pause");
     return 0;

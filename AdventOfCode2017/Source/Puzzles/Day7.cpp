@@ -89,6 +89,11 @@ Day7::Day7()
 
 }
 
+Day7::~Day7()
+{
+
+}
+
 Program* GetRoot(Program& program)
 {
 	Program* pCurrent = &program;

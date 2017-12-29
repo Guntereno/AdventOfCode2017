@@ -19,6 +19,11 @@ Day2::Day2()
 
 }
 
+Day2::~Day2()
+{
+
+}
+
 std::string Day2::Solve()
 {
 	stringstream solutionStream;

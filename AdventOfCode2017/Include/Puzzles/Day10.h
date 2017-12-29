@@ -2,10 +2,10 @@
 
 #include "Puzzle.h"
 
-class Day7 : public Puzzle
+class Day10 : public Puzzle
 {
 public:
-	Day7();
-	virtual ~Day7() override;
+	Day10();
+	virtual ~Day10() override;
 	virtual std::string Solve() override;
 };

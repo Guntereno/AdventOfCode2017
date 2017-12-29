@@ -15,6 +15,11 @@ Day6::Day6()
 
 }
 
+Day6::~Day6()
+{
+
+}
+
 vector<int> LoadBanks(const char* fileName)
 {
 	Common::ParseInt parseInt;

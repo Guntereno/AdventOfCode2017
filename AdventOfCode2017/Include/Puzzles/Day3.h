@@ -5,6 +5,7 @@
 class Day3 : public Puzzle
 {
 public:
-    Day3();
-    std::string Solve();
+	Day3();
+	virtual ~Day3() override;
+	virtual std::string Solve() override;
 };

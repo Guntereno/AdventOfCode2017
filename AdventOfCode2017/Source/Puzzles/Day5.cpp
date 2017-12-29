@@ -53,6 +53,10 @@ Day5::Day5()
 
 }
 
+Day5::~Day5()
+{
+
+}
 
 vector<int> LoadProgram(string fileName)
 {
